@@ -9,14 +9,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <title>Paperless</title>
+   <!-- <style type="text/css">
+          .dropdown:hover >  .dropdown-menu , .dropend:hover > .dropdown-menu{
+              display: block;
+          }
+    </style>-->
+<style type="text/css">
+          .dropdown:hover >  .dropdown-menu {
+              display: block;
+          }
+          a:hover{color:#FFD700; text-decoration:none}
+          a{display: block; margin:auto; text-align:center; color:white; text-decoration:none}
+
+          b:hover{color:black; }
+          b{display: block;; text-align:left; color:white; font }
+
+          li:hover{color:black; }
+          li{display: block;; text-align:left; color:white; font }
+          
+          #a:hover{color:black; }
+          #a{display: block;; text-align:left; color:white; font }
+          
+    </style>
   </head>
+  
+  <nav class="navbar-expand-lg navbar-dark" style="background-color: #064e7a">
   <div class="container">
-  <body>
-    <h1><img src="loggo.jpg" style="width:20%; height:20%"></h1>
-    <form class="d-flex justify-content-end">
-        <input class="form-control me-2 justify-content-end" type="search" placeholder="Search" aria-label="Search" style="width:20%">
+   
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="hover" aria-current="page" href="index.php" style="padding-right:5px">Dummy 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="hover" href="index.php?p=news" style="padding-left:5px; padding-right:5px">Dummy 2</a>
+        </li>
+       
+       
+      </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- menu atas -->
+  <!--<div class="container-fluid nav-atas text-white align-middle">
+    <div class="row" style="background-color:#064e7a; font-color:#ffff; color:#ffff; font-size:110px;">
+        <div class="col-auto"><a href="#">menu 1</a></div>
+        <div class="col-auto"><a href="#">menu 2</a></div>
+        <div class="col-auto"><a href="#">menu 3</a></div>
+  </div>
+  </div> -->
+
+
+  <!-- akhir menu atas -->
+  <div style="background-color:#042351">
+  <div class="container">
+  <body>  
+   <div class="container">
+    <h1><img src="heder.png" style="width:30%; height:30%"></h1>
+    <!--<form class="d-flex justify-content-end">
+        <input class="form-control me-2 justify-content-end" type="search" placeholder="Search" aria-label="Search" style="width:30%">
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form> -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -28,65 +82,99 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
-
+    </div> </div>
   </body>
-</div>
+
   <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#000080">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #064e7a">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
+    <a class="navbar-brand " >Menu</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="border-end" aria-current="page" href="index.php" style="padding-right: 10px; padding-left: 10px;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="index.php?p=news">Library News</a>
+          <a class="border-end" href="index.php?p=news" style="padding-right: 10px; padding-left: 10px;">Library News</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item dropdown border-end">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
             Area Anggota
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#000080">
-            <li><a class="dropdown-item text-secondary" href="index.php?p=member">Login Member</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#064e7a"  >
+            <li><a class="dropdown-item" href="index.php?p=member" style="color:white; text-decoration:none;">Login Member</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=daftar_online">Registrasi Member</a></li>
+            <li ><a class="dropdown-item"  href="index.php?p=daftar_online" style="color:white; text-decoration:none;">Registrasi Member</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=survei">Survei</a></li>
+            <li><a class="dropdown-item" href="index.php?p=survei" style="color:white; text-decoration:none;">Survei</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=usul_buku">Usul Buku</a></li>
+            <li><a class="dropdown-item" href="index.php?p=usul_buku" style="color:white; text-decoration:none;">Usul Buku</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+                  <div class="dropdown-item dropend"  >
+        <!--<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+          Dropright
+        </button>-->
+        <b class="fw-normal dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+            kesamping
+        </b>
+        <ul class="dropdown-menu"  style="background-color:#064e7a" >
+          <!-- Dropdown menu links -->
+          <li><a class="dropdown-item"  href="#"  style="color:white; text-decoration:none;">Usul Buku</a></li>
+        </ul>
+      </div>
+
+
+
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item dropdown border-end">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
             Katalog
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#000080">
-            <li><a id="fc" class="dropdown-item text-secondary" href="https://paperless.umkt.ac.id/">Paperless</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#064e7a">
+            <li><a id="fc" class="dropdown-item" href="https://paperless.umkt.ac.id/" style="color:white; text-decoration:none;">Paperless</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="https://dspace.umkt.ac.id/">Repository</a></li>
+            <li><a class="dropdown-item" href="https://dspace.umkt.ac.id/" style="color:white; text-decoration:none;">Repository</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="http://b.id/mobi/">E-Book</a></li>
+            <li><a class="dropdown-item" href="http://b.id/mobi/" style="color:white; text-decoration:none;">E-Book</a></li>
+            <li><hr class="dropdown-divider"></li>
+
+            <div class="dropdown-item dropend">
+        <!--<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+          Dropright
+        </button>-->
+        <b class="fw-normal dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            kesamping
+        </b>
+        <ul class="dropdown-menu" style="background-color:#064e7a">
+          <!-- Dropdown menu links -->
+          <li><a class="dropdown-item" href="#" style="color:white; text-decoration:none;">Usul Buku</a></li>
+        </ul>
+      </div>
             
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item dropdown ">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
           Tentang Kami
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#000080">
-            <li><a class="dropdown-item text-secondary" href="index.php?p=librarianr">Librarian</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#064e7a">
+            <li><a class="dropdown-item" href="index.php?p=librarianr" style="color:white; text-decoration:none;">Librarian</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=profil">Profil</a></li>
+            <li><a class="dropdown-item" href="index.php?p=profil" style="color:white; text-decoration:none;">Profil</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=fasilitas">Fasilitas Perpustakaan</a></li>
+            <li><a class="dropdown-item" href="index.php?p=fasilitas" style="color:white; text-decoration:none;">Fasilitas Perpustakaan</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=layanan">Layanan Perpustakaan</a></li>
+            <li><a class="dropdown-item" href="index.php?p=layanan" style="color:white; text-decoration:none;">Layanan Perpustakaan</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-secondary" href="index.php?p=peta" class="openPopUp" width="600" height="400">Library Location</a></li>
+            <li><a class="dropdown-item" href="index.php?p=peta" class="openPopUp" width="600" height="400" style="color:white; text-decoration:none" >Library Location</a></li>
+
+           
+            
           </ul>
         </li>
      
