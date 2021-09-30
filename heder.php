@@ -4,27 +4,27 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
 
     <title>Paperless</title>
-   <!-- <style type="text/css">
+  <!--<style type="text/css">
           .dropdown:hover >  .dropdown-menu , .dropend:hover > .dropdown-menu{
               display: block;
           }
-    </style>-->
-<style type="text/css">
-          .dropdown:hover >  .dropdown-menu {
-              display: block;
-          }
-          a:hover{color:#FFD700; text-decoration:none}
-          a{display: block; margin:auto; text-align:center; color:white; text-decoration:none}
+
+          .nav:hover{color:#FFD700; text-decoration:none}
+          .nav{display: block; margin:auto; text-align:center; color:white; text-decoration:none}
 
           b:hover{color:black; }
           b{display: block;; text-align:left; color:white; font }
 
-         
           .carousel-item {
             height:670px;
         }
@@ -43,13 +43,19 @@
       margin-left:50px;
       margin-right:50px;
       position:center;
-      align:center
-    }
-          
-    </style>
+      align:center}
+
+      .card:hover {background-color:#313a5b; color:#ffff
+      }
+      .card-header:hover{color:grey}
+
+    </style> -->
+
+    <!-- Editing -->
+
   </head>
   
-  <nav class="navbar-expand-lg navbar-dark" style="background-color: #064e7a">
+  <nav class="navbar-expand-lg " style="background-color: #064e7a">
   <div class="container">
    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -100,9 +106,9 @@
     -->
     </div> </div>
   </body>
-
+          <!-- Edit Menu Navigation Bar-->
   <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #064e7a">
+  <nav class="navbar navbar-expand-lg navbar-dark dropdown-menu animate-menu slideIn-menu" aria-labelledby="navbarDropdown" style="background-color: #064e7a">
   <div class="container-fluid">
     <a class="navbar-brand " >Menu</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,17 +117,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="border-end" aria-current="page" href="index.php" style="padding-right: 10px; padding-left: 10px;">Home</a>
+          <a class="border-end nav" aria-current="page" href="index.php" style="padding-right: 10px; padding-left: 10px;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="border-end" href="index.php?p=news" style="padding-right: 10px; padding-left: 10px;">Library News</a>
+          <a class="border-end nav" href="index.php?p=news" style="padding-right: 10px; padding-left: 10px;">Library News</a>
         </li>
         <li class="nav-item dropdown border-end">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
+          <a class="dropdown-toggle nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
             Area Anggota
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#064e7a"  >
-            <li><a class="dropdown-item" href="index.php?p=member" style="color:white; text-decoration:none;">Login Member</a></li>
+            <li><a  class="dropdown-item " href="index.php?p=member" style="color:white; ">Login Member</a></li>
             <li><hr class="dropdown-divider"></li>
             <li ><a class="dropdown-item"  href="index.php?p=daftar_online" style="color:white; text-decoration:none;">Registrasi Member</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -139,16 +145,16 @@
         </b>
         <ul class="dropdown-menu"  style="background-color:#064e7a" >
           <!-- Dropdown menu links -->
-          <li><a class="dropdown-item"  href="#"  style="color:white; text-decoration:none;">Usul Buku</a></li>
+          <li><a class="dropdown-item"  href="#"  style="color:white ">Usul Buku</a></li>
         </ul>
       </div>
 
 
-
+          <!-- Sub Menu (Menu yang Punya Anakan) -->
           </ul>
         </li>
-        <li class="nav-item dropdown border-end">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
+        <li class="nav-item dropdown border-end ">
+          <a class="dropdown-toggle nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
             Katalog
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#064e7a">
@@ -175,7 +181,7 @@
           </ul>
         </li>
         <li class="nav-item dropdown ">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
+          <a class="dropdown-toggle nav" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-right: 10px; padding-left: 10px;">
           Tentang Kami
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#064e7a">
@@ -200,41 +206,74 @@
   </div>
 </nav>
 
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  
-  <div class="carousel-inner" >
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="4.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <<!-- KALAU MAU NAMBAH TULISAN DI SLIDE-->
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="2.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- KALAU MAU NAMBAH TULISAN DI SLIDE-->
-      </div>
     </div>
     <div class="carousel-item">
       <img src="1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- KALAU MAU NAMBAH TULISAN DI SLIDE-->
-      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-          
+
+
+
+<!-- 3 Kotak Hiasan -->
+<div class="container">
+  <div class="row">
+  <div class="card text-center">
+    <div class="card-header h3">
+      Repository
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <i class="fas fa-database h1"></i><br>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <div class="card-header h3">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <i class="fas fa-book-open h1"></i><br>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card text-center">
+    <div class="card-header h3">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <i class="fas fa-search h1"></i><br>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  
+  </div>
+  </div>
+</div>
+
+<br><br>
+
 </html>
